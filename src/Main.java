@@ -7,7 +7,7 @@ public class Main {
       Scanner scanner = new Scanner(System.in);
 
       do{
-         System.out.println("Enter a natural number:");
+         System.out.print("Enter a natural number: ");
          input = scanner.nextInt();
       } while(input < 0);
 
@@ -17,6 +17,6 @@ public class Main {
 
    // Recursion method below
    public static int performRecursion(int number) {
-      return number<=0 ? 1 : number*performRecursion(number-1);
+      return number==0 ? 1 : number*performRecursion(number-1);
    }
 }
